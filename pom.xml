@@ -32,6 +32,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     <url>https://github.com/jiayuhan-it/yarn-jyhtest</url>
     <tag>v1.12</tag>
   </scm>
+  <developers>
+    <developer>
+      <name>jiayuhan</name>
+      <email>jiayuhan-it@360.cn</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>+8</timezone>
+    </developer>
+  </developers>
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -47,12 +57,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     <repository>
       <id>${distMgmtStagingId}</id>
       <name>${distMgmtStagingName}</name>
-      <url>${distMgmtStagingUrl}</url>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
     <snapshotRepository>
       <id>${distMgmtSnapshotsId}</id>
       <name>${distMgmtSnapshotsName}</name>
-      <url>${distMgmtSnapshotsUrl}</url>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
     <site>
       <id>apache.website</id>
