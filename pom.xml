@@ -22,7 +22,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <description>Apache Hadoop Main</description>
   <name>Apache Hadoop Main</name>
   <packaging>pom</packaging>
-
+  <scm>
+    <connection>
+      scm:git:https://github.com/jiayuhan-it/yarn-jyhtest.git
+    </connection>
+    <developerConnection>
+      scm:git:https://github.com/jiayuhan-it/yarn-jyhtest.git
+    </developerConnection>
+    <url>https://github.com/jiayuhan-it/yarn-jyhtest</url>
+    <tag>v1.12</tag>
+  </scm>
   <dependencyManagement>
     <dependencies>
       <dependency>
