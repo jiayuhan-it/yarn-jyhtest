@@ -55,12 +55,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
   <distributionManagement>
     <repository>
-      <id>${distMgmtStagingId}</id>
+      <id>releases</id>
       <name>${distMgmtStagingName}</name>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
     <snapshotRepository>
-      <id>${distMgmtSnapshotsId}</id>
+      <id>snapshots</id>
       <name>${distMgmtSnapshotsName}</name>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
