@@ -22,7 +22,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <description>Apache Hadoop Main</description>
   <name>Apache Hadoop Main</name>
   <packaging>pom</packaging>
-  <scm>
+  <!--scm>
     <connection>
       scm:git:https://github.com/jiayuhan-it/yarn-jyhtest.git
     </connection>
@@ -41,7 +41,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
       </roles>
       <timezone>+8</timezone>
     </developer>
-  </developers>
+  </developers-->
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -52,8 +53,19 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
       </dependency>
     </dependencies>
   </dependencyManagement>
-
   <distributionManagement>
+  <repository>
+    <id>releases</id>
+    <name>Releases</name>
+    <url>http://w-hdp905.safe.zzbc.qihoo.net:8081/nexus/content/repositories/releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <name>Snapshots</name>
+    <url>http://w-hdp905.safe.zzbc.qihoo.net:8081/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
+
+  <!--distributionManagement>
     <snapshotRepository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
@@ -61,7 +73,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     <repository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
+    </repository-->
   </distributionManagement>
 
   <repositories>
