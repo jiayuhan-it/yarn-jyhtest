@@ -19,10 +19,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <groupId>org.apache.hadoop</groupId>
   <artifactId>hadoop-main</artifactId>
   <version>2.7.3JYHTEST</version>
+  <url>https://github.com/jiayuhan-it/yarn-jyhtest</url>
   <description>Apache Hadoop Main</description>
   <name>Apache Hadoop Main</name>
   <packaging>pom</packaging>
-  <!--scm>
+  <scm>
     <connection>
       scm:git:https://github.com/jiayuhan-it/yarn-jyhtest.git
     </connection>
@@ -41,7 +42,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
       </roles>
       <timezone>+8</timezone>
     </developer>
-  </developers-->
+  </developers>
 
   <dependencyManagement>
     <dependencies>
@@ -57,12 +58,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <repository>
     <id>releases</id>
     <name>Releases</name>
-    <url>http://w-hdp905.safe.zzbc.qihoo.net:8081/nexus/content/repositories/releases/</url>
+    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
   </repository>
   <snapshotRepository>
     <id>snapshots</id>
     <name>Snapshots</name>
-    <url>http://w-hdp905.safe.zzbc.qihoo.net:8081/nexus/content/repositories/snapshots/</url>
+    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
   </snapshotRepository>
 
   <!--distributionManagement>
@@ -82,13 +83,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
       <name>${distMgmtSnapshotsName}</name>
       <url>${distMgmtSnapshotsUrl}</url>
     </repository>
-    <repository>
+    <!--repository>
       <id>repository.jboss.org</id>
       <url>http://repository.jboss.org/nexus/content/groups/public/</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
-    </repository>
+    </repository-->
   </repositories>
 
   <licenses>
@@ -214,6 +215,46 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     </pluginManagement>
 
     <plugins>
+      <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-source-plugin</artifactId>
+      <version>2.2.1</version>
+      <executions>
+        <execution>
+          <id>attach-sources</id>
+          <goals>
+            <goal>jar-no-fork</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-javadoc-plugin</artifactId>
+      <version>2.9.1</version>
+      <executions>
+        <execution>
+          <id>attach-javadocs</id>
+          <goals>
+            <goal>jar</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+ <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-gpg-plugin</artifactId>
+      <version>1.5</version>
+      <executions>
+        <execution>
+          <id>sign-artifacts</id>
+          <phase>verify</phase>
+          <goals>
+            <goal>sign</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
