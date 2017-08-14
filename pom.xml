@@ -18,7 +18,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.jiayuhan-it</groupId>
   <artifactId>hadoop-main</artifactId>
-  <version>2.7.3JYHTEST</version>
+  <version>2.7.3JYHTEST2</version>
   <url>https://github.com/jiayuhan-it/yarn-jyhtest</url>
   <description>Apache Hadoop Main</description>
   <name>Apache Hadoop Main</name>

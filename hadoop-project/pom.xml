@@ -20,11 +20,11 @@
   <parent>
     <groupId>com.github.jiayuhan-it</groupId>
     <artifactId>hadoop-main</artifactId>
-    <version>2.7.3JYHTEST</version>
+    <version>2.7.3JYHTEST2</version>
   </parent>
   <groupId>com.github.jiayuhan-it</groupId>
   <artifactId>hadoop-project</artifactId>
-  <version>2.7.3JYHTEST</version>
+  <version>2.7.3JYHTEST2</version>
   <description>Apache Hadoop Project POM</description>
   <name>Apache Hadoop Project POM</name>
   <packaging>pom</packaging>

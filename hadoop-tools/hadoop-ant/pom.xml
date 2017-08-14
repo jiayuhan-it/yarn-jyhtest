@@ -20,12 +20,12 @@
   <parent>
     <groupId>com.github.jiayuhan-it</groupId>
     <artifactId>hadoop-project</artifactId>
-    <version>2.7.3JYHTEST</version>
+    <version>2.7.3JYHTEST2</version>
     <relativePath>../../hadoop-project</relativePath>
   </parent>
   <groupId>com.github.jiayuhan-it</groupId>
   <artifactId>hadoop-ant</artifactId>
-  <version>2.7.3JYHTEST</version>
+  <version>2.7.3JYHTEST2</version>
   <description>Apache Hadoop Ant Tasks</description>
   <name>Apache Hadoop Ant Tasks</name>
   <packaging>jar</packaging>

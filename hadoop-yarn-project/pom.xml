@@ -18,12 +18,12 @@
   <parent>
     <groupId>com.github.jiayuhan-it</groupId>
     <artifactId>hadoop-project</artifactId>
-    <version>2.7.3JYHTEST</version>
+    <version>2.7.3JYHTEST2</version>
     <relativePath>../hadoop-project</relativePath>
   </parent>
   <groupId>com.github.jiayuhan-it</groupId>
   <artifactId>hadoop-yarn-project</artifactId>
-  <version>2.7.3JYHTEST</version>
+  <version>2.7.3JYHTEST2</version>
   <packaging>pom</packaging>
   <name>hadoop-yarn-project</name>
   <url>http://hadoop.apache.org/yarn/</url>
